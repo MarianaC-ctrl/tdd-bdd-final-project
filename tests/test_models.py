@@ -142,15 +142,6 @@ class TestProductModel(unittest.TestCase):
         product.delete()
         self.assertEqual(len(Product.all()), 0)
 
-    def test_delete_a_product(self):
-        """It should Delete a Product"""
-        product = ProductFactory()
-        product.create()
-        self.assertEqual(len(Product.all()), 1)
-        # delete the product and make sure it isn't in the database
-        product.delete()
-        self.assertEqual(len(Product.all()), 0)
-
      def test_find_by_name(self):
         """It should Find a Product by Name"""
         products = ProductFactory.create_batch(5)
