@@ -131,6 +131,16 @@ class TestProductModel(unittest.TestCase):
         product.delete()
         self.assertEqual(len(Product.all()), 0)
 
+    def test_list_all_products(self):
+    """It should List all Products"""
+    products = ProductFactory.create_batch(10)
+    for product in products:
+        product.create()
+    all_products = Product.all()
+    self.assertEqual(len(all_products), 10)
+    for product in all_products:
+        self.assertIn(product, products)
+
      def test_find_by_name(self):
         """It should Find a Product by Name"""
         products = ProductFactory.create_batch(5)
