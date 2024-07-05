@@ -13,17 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 ######################################################################
-"""
-Product API Service Test Suite
 
-Test cases can be run with the following:
-  nosetests -v --with-spec --spec-color
-  coverage report -m
-  codecov --token=$CODECOV_TOKEN
-
-  While debugging just these tests it's convenient to use this:
-    nosetests --stop tests/test_service.py:TestProductService
-"""
 import os
 import logging
 from decimal import Decimal
