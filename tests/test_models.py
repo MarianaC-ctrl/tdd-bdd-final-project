@@ -12,17 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""
-Test cases for Product Model
-
-Test cases can be run with:
-    nosetests
-    coverage report -m
-
-While debugging just these tests it's convenient to use this:
-    nosetests --stop tests/test_models.py:TestProductModel
-
-"""
 import os
 import logging
 import unittest
